@@ -1,0 +1,35 @@
+[
+    {
+        "product": "P1",
+        "forecast_demand": 120,
+        "current_stock": 30,
+        "production_capacity": 200,
+        "safety_percentage": 10,
+        "forecast_uncertainty": "low",
+        "recommended_production": 102,
+        "status": "Increase production",
+        "reason": "Production recommendation increased because predicted demand is higher than current inventory availability."
+    },
+    {
+        "product": "P2",
+        "forecast_demand": 50,
+        "current_stock": 100,
+        "production_capacity": 100,
+        "safety_percentage": 10,
+        "forecast_uncertainty": "low",
+        "recommended_production": 0,
+        "status": "No additional production required",
+        "reason": "Current inventory is sufficient to meet forecast demand and safety buffer."
+    },
+    {
+        "product": "P3",
+        "forecast_demand": 300,
+        "current_stock": 0,
+        "production_capacity": 250,
+        "safety_percentage": 10,
+        "forecast_uncertainty": "high",
+        "recommended_production": 250,
+        "status": "Capacity limit reached",
+        "reason": "Recommendation exceeds production capacity; adjusted to maximum capacity."
+    }
+]

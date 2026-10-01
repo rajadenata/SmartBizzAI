@@ -1,0 +1,4 @@
+product,forecast_demand,current_stock,production_capacity,safety_percentage,forecast_uncertainty,recommended_production,status,reason
+P1,120,30,200,10,low,102,Increase production,Production recommendation increased because predicted demand is higher than current inventory availability.
+P2,50,100,100,10,low,0,No additional production required,Current inventory is sufficient to meet forecast demand and safety buffer.
+P3,300,0,250,10,high,250,Capacity limit reached,Recommendation exceeds production capacity; adjusted to maximum capacity.

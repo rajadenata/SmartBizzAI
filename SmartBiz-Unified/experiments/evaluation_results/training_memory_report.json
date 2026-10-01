@@ -1,0 +1,117 @@
+{
+    "total_ram_gb": 15.822917938232422,
+    "available_ram_before_dry_run_gb": 5.061309814453125,
+    "cpu_logical_cores": 16,
+    "cpu_physical_cores": 8,
+    "max_cpu_threads_used": 4,
+    "memory_tracking": [
+        {
+            "stage": "Before Validation",
+            "tracemalloc_mb": 0.0,
+            "tracemalloc_peak_mb": 0.0,
+            "process_rss_mb": 186.220544
+        },
+        {
+            "stage": "After Validation",
+            "tracemalloc_mb": 0.228956,
+            "tracemalloc_peak_mb": 938.913449,
+            "process_rss_mb": 503.373824
+        },
+        {
+            "stage": "After Loading",
+            "tracemalloc_mb": 1.642348,
+            "tracemalloc_peak_mb": 938.913449,
+            "process_rss_mb": 242.069504
+        },
+        {
+            "stage": "After Feature Engineering",
+            "tracemalloc_mb": 6.16005,
+            "tracemalloc_peak_mb": 938.913449,
+            "process_rss_mb": 251.990016
+        },
+        {
+            "stage": "After Baseline Training",
+            "tracemalloc_mb": 6.651074,
+            "tracemalloc_peak_mb": 938.913449,
+            "process_rss_mb": 252.403712
+        },
+        {
+            "stage": "After ML Training",
+            "tracemalloc_mb": 7.024295,
+            "tracemalloc_peak_mb": 938.913449,
+            "process_rss_mb": 360.013824
+        }
+    ],
+    "peak_process_rss_mb": 503.373824,
+    "dataset_structure_passed": true,
+    "duplicate_check_passed": true,
+    "missing_date_check_passed": true,
+    "feature_engineering_passed": true,
+    "leakage_check_passed": true,
+    "lag_validation_passed": true,
+    "rolling_validation_passed": true,
+    "price_leakage_check_passed": true,
+    "future_information_check_passed": true,
+    "temporal_split_passed": true,
+    "memory_safety_passed": true,
+    "baseline_training_passed": true,
+    "ml_training_passed": true,
+    "evaluation_passed": true,
+    "cpu_safety_passed": true,
+    "dry_run_completed": false,
+    "syntax_check_passed": true,
+    "original_item_series": 30490,
+    "n_stores": 10,
+    "n_categories": 3,
+    "actual_aggregated_rows": 57390,
+    "n_dates": 1913,
+    "actual_store_category_series": 30,
+    "series_reduction_factor": 1016.3333333333334,
+    "duplicate_records": 0,
+    "number_of_series_checked": 30,
+    "series_with_missing_dates": 0,
+    "missing_dates": 0,
+    "rows_before_feature_cleaning": 57390,
+    "rows_after_feature_cleaning": 56550,
+    "rows_removed": 840,
+    "price_rows_removed": 0,
+    "series_retained": 30,
+    "training_times": {
+        "baselines_all": 0.20132756233215332,
+        "random_forest": 5.221368789672852,
+        "xgboost": 0.6513810157775879,
+        "lightgbm": 0.33673620223999023
+    },
+    "train_start_date": "2011-02-26",
+    "train_end_date": "2015-04-13",
+    "test_start_date": "2015-04-14",
+    "test_end_date": "2016-04-24",
+    "number_of_train_dates": 1508,
+    "number_of_test_dates": 377,
+    "number_of_train_rows": 45240,
+    "number_of_test_rows": 11310,
+    "models": {
+        "random_forest": {
+            "rss_before_mb": 244.44928,
+            "rss_after_fit_mb": 265.695232,
+            "training_time_sec": 5.221368789672852,
+            "rss_after_predict_mb": 266.15808,
+            "peak_rss_mb": 266.15808
+        },
+        "xgboost": {
+            "rss_before_mb": 266.91584,
+            "rss_after_fit_mb": 376.823808,
+            "training_time_sec": 0.6513810157775879,
+            "rss_after_predict_mb": 376.91392,
+            "peak_rss_mb": 376.91392
+        },
+        "lightgbm": {
+            "rss_before_mb": 378.458112,
+            "rss_after_fit_mb": 382.865408,
+            "training_time_sec": 0.33673620223999023,
+            "rss_after_predict_mb": 382.8736,
+            "peak_rss_mb": 382.8736
+        }
+    },
+    "all_passed": true
+}
